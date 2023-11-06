@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fairway_portrait2"
+        android:contentDescription="@string/background_image_main" />
+
+    <include
+        android:id="@+id/common_settings"
+        layout="@layout/common_settings"
+        tools:layout_editor_absoluteX="-140dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:fontFamily="@font/font_temp"
+        android:padding="16dp"
+        android:text="@string/main_title"
+        android:textColor="#167f51"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/start_round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:fontFamily="@font/font_temp"
+            android:text="@string/start_round"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/statistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:fontFamily="@font/font_temp"
+            android:text="@string/statistics"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/temp_test_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:fontFamily="@font/font_temp"
+            android:text="Pref. test"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fbfffd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/common_settings"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ScrollView
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:background="#fbfffd">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/settings_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_temp"
+                android:gravity="center"
+                android:text="Settings"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="@+id/settings_ll"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/settings_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/settings_tv">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike"
+                        android:padding="8dp"
+                        android:text="@string/track_fw_hits"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/fairway_tracking_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike"
+                        android:padding="8dp"
+                        android:text="@string/track_gir"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/gir_tracking_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike"
+                        android:padding="8dp"
+                        android:text="@string/track_penalties"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/penalty_tracking_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike"
+                        android:padding="8dp"
+                        android:text="@string/track_puts"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/put_tracking_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/put_type_setting_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/alike"
+                        android:padding="8dp"
+                        android:text="@string/track_put_types"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/put_type_tracking_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/put_classification_settings_ll"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@id/forward_arrow_setting_ib"
+                app:layout_constraintStart_toEndOf="@+id/back_arrow_setting_ib"
+                app:layout_constraintTop_toBottomOf="@+id/settings_ll">
+
+                <TextView
+                    android:id="@+id/put_type_title_setting_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_temp"
+                    android:gravity="center"
+                    android:text="Put Type"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/put_type_setting_first_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alike"
+                    android:gravity="center"
+                    android:text="Tap-in put"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/put_type_setting_second_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alike"
+                    android:gravity="center"
+                    android:text="Drill-able"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/put_type_setting_third_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alike"
+                    android:gravity="center"
+                    android:text="Drain-able"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/put_type_setting_fourth_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alike"
+                    android:gravity="center"
+                    android:text="Lag put"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/back_arrow_setting_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fbfffd"
+                android:clickable="false"
+                android:contentDescription="navigate_back_for_put_types"
+                android:src="@drawable/arrow_back"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/put_classification_settings_ll"
+                app:layout_constraintEnd_toStartOf="@+id/put_classification_settings_ll"
+                app:layout_constraintStart_toStartOf="@+id/settings_ll"
+                app:layout_constraintTop_toTopOf="@+id/put_classification_settings_ll" />
+
+            <ImageButton
+                android:id="@+id/forward_arrow_setting_ib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fbfffd"
+                android:clickable="false"
+                android:contentDescription="navigate_forward_for_put_types"
+                android:src="@drawable/arrow_forward"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/put_classification_settings_ll"
+                app:layout_constraintEnd_toEndOf="@+id/settings_ll"
+                app:layout_constraintStart_toEndOf="@id/put_classification_settings_ll"
+                app:layout_constraintTop_toTopOf="@+id/put_classification_settings_ll" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

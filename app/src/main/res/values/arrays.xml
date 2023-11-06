@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="welcome_text">
+        <item>Welcome to Golf Leap!</item>
+        <item>Before we get started we need to set up your preferences</item>
+    </string-array>
+
+</resources>

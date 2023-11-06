@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="#fbfffd">
+
+
+        <LinearLayout
+            android:id="@+id/question_and_bt_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/put_type_ll"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/question_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/font_temp"
+                android:padding="8dp"
+                android:text="@string/setup_question_one"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/no_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:text="@string/no"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/yes_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="@string/yes"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/put_type_ll"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@id/forward_arrow_ib"
+            app:layout_constraintStart_toEndOf="@+id/back_arrow_ib"
+            app:layout_constraintTop_toBottomOf="@+id/question_and_bt_ll">
+
+            <TextView
+                android:id="@+id/put_type_title_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_temp"
+                android:gravity="center"
+                android:text="@string/put_type_title"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/put_type_first_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alike"
+                android:gravity="center"
+                android:text="@string/tap_in_puts"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/put_type_second_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alike"
+                android:gravity="center"
+                android:text="@string/short_range_puts"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/put_type_third_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alike"
+                android:gravity="center"
+                android:text="@string/medium_range_puts"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/put_type_fourth_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alike"
+                android:gravity="center"
+                android:text="@string/long_range_puts"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/back_arrow_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fbfffd"
+            android:clickable="false"
+            android:contentDescription="@string/cycle_put_types"
+            android:src="@drawable/arrow_back"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/put_type_ll"
+            app:layout_constraintEnd_toStartOf="@+id/put_type_ll"
+            app:layout_constraintStart_toStartOf="@+id/question_and_bt_ll"
+            app:layout_constraintTop_toTopOf="@+id/put_type_ll" />
+
+        <ImageButton
+            android:id="@+id/forward_arrow_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fbfffd"
+            android:clickable="false"
+            android:contentDescription="@string/cycle_put_types"
+            android:src="@drawable/arrow_forward"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/put_type_ll"
+            app:layout_constraintEnd_toEndOf="@+id/question_and_bt_ll"
+            app:layout_constraintStart_toEndOf="@+id/put_type_ll"
+            app:layout_constraintTop_toTopOf="@+id/put_type_ll" />
+
+        <Button
+            android:id="@+id/pick_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:padding="16dp"
+            android:text="@string/pick"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/put_type_ll" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/question_mark_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#fbfffd"
+        android:padding="8dp"
+        android:contentDescription="@string/more_information"
+        android:src="@drawable/question_mark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

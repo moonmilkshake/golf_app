@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fairway_popup_description">
+        Tracking fairway hits in golf enables you to record the landing position of your tee shots.
+        It allows you to choose if your shot landed to the left, right, or in the middle
+        of the fairway. This provides valuable data for analyzing and improving your golf game.
+        This information helps you to make informed decisions and refine their strategies for
+        subsequent shots.</string>
+    <string name="gir_popup_description">
+        Tracking Greens in Regulation (GIR) you\'ll gain valuable insights into
+        your game. By monitoring how often you reach the green in the prescribed number of
+        strokes, you gain a deeper understanding of your performance. GIR statistics help you
+        identify strengths, pinpoint areas for improvement, and make data-driven decisions for a
+        more strategic and successful game. Whether you\'re a seasoned golfer or just starting out,
+        tracking GIR adds precision to your golf journey.</string>
+    <string name="penalties_popup_description">
+        Tracking golf penalties can greatly improve your game. It helps identify recurring
+        mistakes, enhances self-awareness, and leads to informed adjustments. Understanding your
+        penalty patterns makes you a more strategic and confident player, reducing unnecessary
+        strokes and boosting your overall performance on the course.</string>
+    <string name="put_popup_description">
+        Tracking your putting game in is crucial for success on the green.
+        It provides essential data on the number of putts per round, helping you refine your
+        accuracy and distance control. By monitoring your putting statistics, you can fine-tune
+        your stroke, enhance your short game, and ultimately lower your scores.</string>
+    <string name="put_type_popup_description">
+        Tracking different types of putts offers invaluable insights. It helps you gain insights
+        into what sort of puts that you typically struggle with or find success in. Choice of types
+        are either:\n\n
+        a) Long, Medium, Short and Tap-in length puts.\n
+        b) Lag, Drain-able, Drill-able and Tap-in puts.\n\n
+        You can choose whichever suits your needs the best!
+    </string>
+    <string name="placeholder_popup_description">
+        This extended placeholder text serves as filler content to demonstrate the layout and
+        design of a document, website, or application. It is devoid of meaningful information
+        and exists only for temporary visual representation. Placeholder text plays a crucial role
+        in allowing designers and developers to visualize the arrangement of elements, typography,
+        and overall aesthetics before the actual content is integrated. It helps ensure that the
+        final product meets design expectations</string>
+    <string name="put_type_choice_popup_description">
+        Tap-In Putts: very short putts, typically within a few inches of the hole.\n
+        Drill-able Putts: putts that are short and straight, and golfers aim to "drill" them directly into the hole without much break or curve.\n
+        Drain-able Putts: putts that have a good chance of going into the hole, with a bit more curve than a drain-able put.\n
+        Lag Putts: Lag putts are long-distance putts where the primary goal is to get the ball close to the hole, rather than sink it. They are typically used to set up an easier second putt.\n\n
+        Long Range Putts: Long range putts are putts taken from a considerable distance away from the hole. These putts require more strength and accuracy to reach the target.\n
+        Medium Range Putts: Medium range putts are taken from a moderate distance from the hole, often requiring good precision and feel to sink them.\n
+        Short Range Putts: Short range putts are typically taken from close to the hole but require focus to ensure accuracy and proper aim.
+</string>
+    <string name="setup_question_one">Would you like to track Fairway hits?</string>
+    <string name="setup_question_two">Would you like to track Greens in reg?</string>
+    <string name="setup_question_three">Would you like to track your penalties?</string>
+    <string name="setup_question_four">Would you like to track puts?</string>
+    <string name="setup_question_five">Would you like to track different types of puts?</string>
+    <string name="setup_question_six">How would you like to categorize your puts?</string>
+</resources>

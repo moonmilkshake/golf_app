@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.bignerdranch.android.golfapp.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/fragment_start"
+        app:popUpToInclusive="false"
+        app:launchSingleTop="true">
+        <action
+            android:id="@+id/show_welcome_wizard"
+            app:destination="@id/welcomeWizardFragment" />
+        <action
+            android:id="@+id/show_common_settings"
+            app:destination="@id/settingsMainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/welcomeWizardFragment"
+        android:name="com.bignerdranch.android.golfapp.fragments.initialsetup.WelcomeWizardFragment"
+        android:label="WelcomeWizardFragment"
+        tools:layout="@layout/fragment_welcome_wizard"
+        app:popUpTo="@id/startFragment"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true">
+        <action
+            android:id="@+id/show_first_setup_wizard"
+            app:destination="@id/firstSetupWizardFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsMainFragment"
+        android:name="com.bignerdranch.android.golfapp.fragments.commonsettings.SettingsMainFragment"
+        android:label="SettingsMainFragment"
+        tools:layout="@layout/common_settings"/>
+    <fragment
+        android:id="@+id/firstSetupWizardFragment"
+        android:name="com.bignerdranch.android.golfapp.fragments.initialsetup.FirstSetupWizardFragment"
+        tools:layout="@layout/fragment_first_setup_wizard"
+        android:label="FirstSetupWizardFragment"
+        app:popUpTo="@id/startFragment"
+        app:popUpToInclusive="true"
+        app:launchSingleTop="true">
+        <action
+            android:id="@+id/show_start_menu"
+            app:destination="@id/startFragment" />
+    </fragment>
+
+</navigation>
