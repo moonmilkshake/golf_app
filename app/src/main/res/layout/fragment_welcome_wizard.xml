@@ -9,17 +9,18 @@
     android:background="#f6faff">
 
     <TextView
-        android:id="@+id/fading_welcome_text"
+        android:id="@+id/fading_welcome_wizard_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:textAlignment="center"
         android:fontFamily="@font/font_temp"
-        android:text="@string/welcome_text"
-        android:textSize="28sp"
+        android:text="@string/placeholder_text"
+        android:textSize="24sp"
         android:visibility="invisible"
         />
 
+    <!--
     <TextView
         android:id="@+id/fading_preferences_text"
         android:layout_width="wrap_content"
@@ -31,6 +32,7 @@
         android:textSize="28sp"
         android:visibility="invisible"
         />
+        -->
 
 
 </RelativeLayout>

@@ -9,7 +9,7 @@ import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 
 class MainActivity : AppCompatActivity() {
-    private val golfViewModel: GolfViewModel by viewModels()
+//    private val golfViewModel: GolfViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
