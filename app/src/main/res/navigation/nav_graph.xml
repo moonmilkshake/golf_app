@@ -18,6 +18,9 @@
         <action
             android:id="@+id/show_common_settings"
             app:destination="@id/settingsMainFragment" />
+        <action
+            android:id="@+id/show_start_round"
+            app:destination="@id/mapsFragment" />
     </fragment>
 
     <fragment
@@ -50,5 +53,10 @@
             android:id="@+id/show_start_menu"
             app:destination="@id/startFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.bignerdranch.android.golfapp.MapsFragment"
+        android:label="MapsFragment"
+        tools:layout="@layout/fragment_maps"/>
 
 </navigation>

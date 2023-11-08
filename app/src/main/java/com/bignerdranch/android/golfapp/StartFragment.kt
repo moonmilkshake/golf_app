@@ -36,6 +36,11 @@ class StartFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) { //Implement functionality
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
+            startRound.setOnClickListener {
+                findNavController().navigate(
+                    StartFragmentDirections.showStartRound()
+                )
+            }
             tempTestWelcome.setOnClickListener {
                 findNavController().navigate(
                     StartFragmentDirections.showWelcomeWizard()

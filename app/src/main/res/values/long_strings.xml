@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Pop-up descriptions -->
     <string name="fairway_popup_description">
         Tracking fairway hits in golf enables you to record the landing position of your tee shots.
         It allows you to choose if your shot landed to the left, right, or in the middle
@@ -29,8 +31,7 @@
         are either:\n\n
         a) Long, Medium, Short and Tap-in length puts.\n
         b) Lag, Drain-able, Drill-able and Tap-in puts.\n\n
-        You can choose whichever suits your needs the best!
-    </string>
+        You can choose whichever suits your needs the best!</string>
     <string name="placeholder_popup_description">
         This extended placeholder text serves as filler content to demonstrate the layout and
         design of a document, website, or application. It is devoid of meaningful information
@@ -45,12 +46,14 @@
         Lag Putts: Lag putts are long-distance putts where the primary goal is to get the ball close to the hole, rather than sink it. They are typically used to set up an easier second putt.\n\n
         Long Range Putts: Long range putts are putts taken from a considerable distance away from the hole. These putts require more strength and accuracy to reach the target.\n
         Medium Range Putts: Medium range putts are taken from a moderate distance from the hole, often requiring good precision and feel to sink them.\n
-        Short Range Putts: Short range putts are typically taken from close to the hole but require focus to ensure accuracy and proper aim.
-</string>
+        Short Range Putts: Short range putts are typically taken from close to the hole but require focus to ensure accuracy and proper aim.</string>
+
+    <!-- Preferences -->
     <string name="setup_question_one">Would you like to track Fairway hits?</string>
     <string name="setup_question_two">Would you like to track Greens in reg?</string>
     <string name="setup_question_three">Would you like to track your penalties?</string>
     <string name="setup_question_four">Would you like to track puts?</string>
     <string name="setup_question_five">Would you like to track different types of puts?</string>
     <string name="setup_question_six">How would you like to categorize your puts?</string>
+
 </resources>

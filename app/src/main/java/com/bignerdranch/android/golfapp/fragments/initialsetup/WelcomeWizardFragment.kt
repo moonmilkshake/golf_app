@@ -12,11 +12,15 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.bignerdranch.android.golfapp.R
 import com.bignerdranch.android.golfapp.databinding.FragmentWelcomeWizardBinding
-
+//AIzaSyBEBZXWuh9KJSuHw2TusEDpvtsEA6SLJ6g
 const val THREE_SECOND_DELAY = 3000L
 const val FOUR_SECOND_DELAY = 4000L
 const val FIVE_SECOND_DELAY = 5000L
 const val SIX_SECOND_DELAY = 6000L
+const val SEVEN_SECOND_DELAY = 7000L
+const val EIGHT_SECOND_DELAY = 8000L
+const val NINE_SECOND_DELAY = 9000L
+const val TEN_SECOND_DELAY = 10000L
 
 class WelcomeWizardFragment: Fragment() {
     private var _binding: FragmentWelcomeWizardBinding? = null
@@ -43,15 +47,7 @@ class WelcomeWizardFragment: Fragment() {
         fadeInAnimation = AnimationUtils.loadAnimation(requireContext(), R.anim.fade_in)
         fadeOutAnimation = AnimationUtils.loadAnimation(requireContext(), R.anim.fade_out)
 
-        fadeInAndOutText(binding.fadingWelcomeText, THREE_SECOND_DELAY)
-
-        handler.postDelayed({
-            fadeInAndOutText(binding.fadingPreferencesText, FOUR_SECOND_DELAY)
-//            handler.postDelayed({
-//                findNavController().navigate(WelcomeWizardFragmentDirections.showFirstSetupWizard())
-//            }, SIX_SECOND_DELAY)
-//            TODO: Enable when wizard is finished otherwise it'll crash when clicked past
-        }, FIVE_SECOND_DELAY)
+        startWelcomeText()
 
         binding.apply {
             welcomeRl.setOnClickListener{
@@ -62,17 +58,47 @@ class WelcomeWizardFragment: Fragment() {
         }
     }
 
+    private fun startWelcomeText() {
+        fadeInAndOutText(getString(R.string.welcome_text), THREE_SECOND_DELAY)  //5 sekunder
+        handler.postDelayed({
+            fadeInAndOutText(getString(R.string.tracking_info_part_one), FIVE_SECOND_DELAY) //7 sekunder
+            handler.postDelayed({
+                fadeInAndOutText(getString(R.string.tracking_info_part_two), FIVE_SECOND_DELAY) //7 sekunder
+                handler.postDelayed({
+                    fadeInAndOutText(getString(R.string.set_preferences), FOUR_SECOND_DELAY) //6 sekunder
+                    handler.postDelayed({
+                        findNavController().navigate(WelcomeWizardFragmentDirections.showFirstSetupWizard())
+                    }, SIX_SECOND_DELAY)
+                }, SEVEN_SECOND_DELAY)
+            }, SEVEN_SECOND_DELAY)
+        }, FIVE_SECOND_DELAY)
+    }
+
+
     private fun fadeInAndOutText(
-        view: View,
+        text: String,
         delayMillis: Long
     ) {
-        view.startAnimation(fadeInAnimation)
-        view.visibility = View.VISIBLE
+        binding.fadingWelcomeWizardText.text = text
+        binding.fadingWelcomeWizardText.startAnimation(fadeInAnimation)
+        binding.fadingWelcomeWizardText.visibility = View.VISIBLE
         handler.postDelayed({
-            view.visibility = View.INVISIBLE
-            view.startAnimation(fadeOutAnimation)
+            binding.fadingWelcomeWizardText.visibility = View.INVISIBLE
+            binding.fadingWelcomeWizardText.startAnimation(fadeOutAnimation)
         }, delayMillis)
     }
+
+//    private fun fadeInAndOutText(
+//        view: View,
+//        delayMillis: Long
+//    ) {
+//        view.startAnimation(fadeInAnimation)
+//        view.visibility = View.VISIBLE
+//        handler.postDelayed({
+//            view.visibility = View.INVISIBLE
+//            view.startAnimation(fadeOutAnimation)
+//        }, delayMillis)
+//    }
 
 
     override fun onDestroy() {

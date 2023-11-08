@@ -1,23 +1,41 @@
 <resources>
+    <!-- Mains -->
     <string name="app_name">OnTrack Golf</string>
     <string name="start_round">Start round!</string>
     <string name="statistics">Statistics</string>
     <string name="main_title">On Track Golf</string>
     <string name="common_settings">Common Settings</string>
+    <string name="background_image_main">Background image to main screen</string>
+
+    <!-- Welcome Wizard -->
     <string name="welcome_text">Welcome to On Track Golf!</string>
-    <string name="set_preferences">Let\'s set some preferences before we get started …</string>
+    <string name="tracking_info_part_one">
+        On Track Golf aims to give you a better grasp of where you\'re at in your golf game.</string>
+    <string name="tracking_info_part_two">
+        This is done by your tracking of shots, which are then turned into relevant statistics. </string>
+    <string name="set_preferences">Before we get started, lets set up what to track!</string>
+
+    <!-- Preferences -->
     <string name="yes">Yes</string>
     <string name="pick">Pick</string>
     <string name="no">No</string>
     <string name="more_information">More information</string>
-    <string name="background_image_main">Background image to main screen</string>
     <string name="tip_image">Image of tip</string>
+    <string name="track_fw_hits">Track Fairway Hits</string>
+    <string name="track_gir">Track Greens in Regulation</string>
+    <string name="track_penalties">Track Penalties</string>
+    <string name="track_puts">Track Puts</string>
+    <string name="track_put_types">Track Type of Puts</string>
+
+    <!-- Pop-ups -->
     <string name="fairway_popup_title">Tracking Fairway hits</string>
     <string name="gir_popup_title">Tracking Greens in Regulation</string>
     <string name="penalties_popup_title">Tracking Penalties</string>
     <string name="put_popup_title">Tracking Putting</string>
     <string name="put_type_popup_title">Tracking Different Types of Puts</string>
     <string name="put_type_choice_popup_title">Overview of Put Types</string>
+
+    <!-- Put related -->
     <string name="put_type_title">Put Type</string>
     <string name="tap_in_puts">Tap-in Puts</string>
     <string name="short_range_puts">Short-range Puts </string>
@@ -27,16 +45,11 @@
     <string name="drain_able_puts">Drain-able Puts</string>
     <string name="lag_puts">Lag Puts</string>
     <string name="cycle_put_types">Cycle through put types</string>
-    <string name="track_fw_hits">Track Fairway Hits</string>
-    <string name="track_gir">Track Greens in Regulation</string>
-    <string name="track_penalties">Track Penalties</string>
-    <string name="track_puts">Track Puts</string>
-    <string name="track_put_types">Track Type of Puts</string>
 
+    <!-- Placeholders -->
+    <string name="placeholder_text">Placeholder text</string>
 
-
-
-
-
+    <!-- KEYS -->
+    <string name="maps_api_key">AIzaSyBEBZXWuh9KJSuHw2TusEDpvtsEA6SLJ6g</string>
 
 </resources>
