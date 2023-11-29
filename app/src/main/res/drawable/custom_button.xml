@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color -->
+    <item>
+        <shape>
+            <solid android:color="#38516A" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <!-- Stroke (border) -->
+    <item android:top="0.2dp" android:right="0.2dp" android:bottom="0.2dp" android:left="0.2dp">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:color="#312E2E"
+                android:width="2dp"/> <!-- Adjust the width of the stroke -->
+            android:color="@color/strokeColor" /> <!-- Adjust the color of the stroke -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <corners android:radius="0dp" /> <!-- Adjust the radius to control the roundness -->
-    <solid android:color="#fcfffe" /> <!-- Background color of the pop-up -->
-    <stroke android:width="2dp" android:color="#5e7974" />
+    <solid android:color="#34373A" /> <!-- Background color of the pop-up -->
+    <stroke android:width="2dp" android:color="#312E2E" />
 </shape>
