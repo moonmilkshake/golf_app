@@ -18,7 +18,8 @@ Features (implemented)
   
   Use of Fine-GPS-location has been implemented.
   
-Features (in planned)
+Features (planned)
+
   Round Statistics Tracking: Capture and analyze detailed stats for each round of golf.
   
   Distance to green by use of GPS.
