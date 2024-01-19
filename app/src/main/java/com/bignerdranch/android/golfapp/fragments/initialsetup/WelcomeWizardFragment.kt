@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.bignerdranch.android.golfapp.R
 import com.bignerdranch.android.golfapp.databinding.FragmentWelcomeWizardBinding
-//AIzaSyBEBZXWuh9KJSuHw2TusEDpvtsEA6SLJ6g
 const val THREE_SECOND_DELAY = 3000L
 const val FOUR_SECOND_DELAY = 4000L
 const val FIVE_SECOND_DELAY = 5000L
