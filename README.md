@@ -8,14 +8,22 @@ Note: This application is in the early stages of development and is not intended
 
 Features (implemented)
   Set-up wizard has been implemented.
+  
   Main menu has been implemented.
+  
   Right-to-access GPS-location has been implemented.
+  
   Use of Fine-GPS-location has been implemented.
+  
 Features (in planned)
   Round Statistics Tracking: Capture and analyze detailed stats for each round of golf.
+  
   Distance to green by use of GPS.
+  
   Performance Analysis: Get insights into strengths and weaknesses in your game.
+  
   Database-storage for captured statistics.
+  
 
 License
 This project is currently under a custom license and is not intended for public use or redistribution. It is open for viewing and collaboration for development purposes only.
